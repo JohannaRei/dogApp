@@ -1,8 +1,17 @@
 'use strict';
 
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-// JSX
 var dog = {
     name: 'Dog',
     hat: 'tophat',
@@ -84,30 +93,30 @@ var appRoot = document.getElementById('app');
 var renderApp = function renderApp() {
     var _React$createElement;
 
-    var docBody = React.createElement(
+    var docBody = _react2.default.createElement(
         'div',
         null,
-        React.createElement(
+        _react2.default.createElement(
             'div',
             { id: 'intro' },
-            React.createElement(
+            _react2.default.createElement(
                 'h1',
                 null,
                 'Hello!'
             ),
-            React.createElement(
+            _react2.default.createElement(
                 'p',
                 null,
                 'Welcome to this tiny JS/React/SVG practice application.'
             ),
-            React.createElement(
+            _react2.default.createElement(
                 'p',
                 null,
                 'All illustrations and code by ',
-                React.createElement(
+                _react2.default.createElement(
                     'a',
                     { href: 'https://jtrein.com', target: '_blank' },
-                    React.createElement(
+                    _react2.default.createElement(
                         'strong',
                         null,
                         'me'
@@ -115,11 +124,11 @@ var renderApp = function renderApp() {
                 ),
                 '!'
             ),
-            React.createElement(
+            _react2.default.createElement(
                 'p',
                 null,
                 'The GitHub repository for this project can be found ',
-                React.createElement(
+                _react2.default.createElement(
                     'a',
                     { href: 'https://github.com/JohannaRei/dogStyler/', target: '_blank' },
                     'here'
@@ -127,34 +136,34 @@ var renderApp = function renderApp() {
                 '.'
             )
         ),
-        React.createElement(
+        _react2.default.createElement(
             'h4',
             null,
             'Enter dog name: '
         ),
-        React.createElement(
+        _react2.default.createElement(
             'form',
             { onSubmit: onNameSubmit },
-            React.createElement('input', { type: 'text', name: 'dogName' }),
-            React.createElement(
+            _react2.default.createElement('input', { type: 'text', name: 'dogName' }),
+            _react2.default.createElement(
                 'button',
                 { className: 'btn-default' },
                 'Name dog'
             )
         ),
-        React.createElement(
+        _react2.default.createElement(
             'h3',
             null,
             dog.name
         ),
-        React.createElement('object', (_React$createElement = { id: 'dog-svg', width: '400' }, _defineProperty(_React$createElement, 'width', '310'), _defineProperty(_React$createElement, 'height', '350'), _defineProperty(_React$createElement, 'type', 'image/svg+xml'), _defineProperty(_React$createElement, 'data', '/images/dog_base.svg'), _React$createElement)),
-        React.createElement(
+        _react2.default.createElement('object', (_React$createElement = { id: 'dog-svg', width: '400' }, _defineProperty(_React$createElement, 'width', '310'), _defineProperty(_React$createElement, 'height', '350'), _defineProperty(_React$createElement, 'type', 'image/svg+xml'), _defineProperty(_React$createElement, 'data', '/images/dog_base.svg'), _React$createElement)),
+        _react2.default.createElement(
             'div',
             { id: 'quote' },
-            React.createElement(
+            _react2.default.createElement(
                 'p',
                 null,
-                React.createElement(
+                _react2.default.createElement(
                     'em',
                     null,
                     '"',
@@ -165,39 +174,39 @@ var renderApp = function renderApp() {
                 dog.name
             )
         ),
-        React.createElement(
+        _react2.default.createElement(
             'h4',
             null,
             'Add a bark: '
         ),
-        React.createElement(
+        _react2.default.createElement(
             'form',
             { onSubmit: onBarkSubmit },
-            React.createElement('input', { type: 'text', name: 'dogBark' }),
-            React.createElement(
+            _react2.default.createElement('input', { type: 'text', name: 'dogBark' }),
+            _react2.default.createElement(
                 'button',
                 { className: 'btn-default' },
                 'Add bark'
             )
         ),
-        React.createElement(
+        _react2.default.createElement(
             'button',
             { onClick: changeHat, className: 'btn-warning' },
             'Change hat'
         ),
-        React.createElement(
+        _react2.default.createElement(
             'button',
             { onClick: changeFace, className: 'btn-warning' },
             'Change face'
         ),
-        React.createElement(
+        _react2.default.createElement(
             'button',
             { onClick: changeBody, className: 'btn-warning' },
             'Change pose'
         )
     );
 
-    ReactDOM.render(docBody, app);
+    _reactDom2.default.render(docBody, app);
 };
 
 renderApp();

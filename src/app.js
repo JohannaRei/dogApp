@@ -1,4 +1,6 @@
-// JSX
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const dog = {
     name: 'Dog',
     hat: 'tophat',
