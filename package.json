@@ -1,0 +1,13 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Johanna Reinikainen",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.6.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "create-react-class": "^15.6.2"
+  }
+}
