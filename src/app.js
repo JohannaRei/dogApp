@@ -81,7 +81,7 @@ const renderApp = () => {
                 <h1>Hello!</h1>
                 <p>Welcome to this tiny JS/React/SVG practice application.</p>
                 <p>All illustrations and code by <a href="https://jtrein.com" target="_blank"><strong>me</strong></a>!</p>
-                <p>The GitHub repository for this project can be found <a href="https://github.com/JohannaRei/dogStyler/" target="_blank">here</a>.</p>
+                <p>The GitHub repository for this project can be found <a href="https://github.com/JohannaRei/dogApp/" target="_blank">here</a>.</p>
             </div>
             <h4>Enter dog name: </h4>
             <form onSubmit={onNameSubmit}>

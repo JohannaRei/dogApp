@@ -130,7 +130,7 @@ var renderApp = function renderApp() {
                 'The GitHub repository for this project can be found ',
                 _react2.default.createElement(
                     'a',
-                    { href: 'https://github.com/JohannaRei/dogStyler/', target: '_blank' },
+                    { href: 'https://github.com/JohannaRei/dogApp/', target: '_blank' },
                     'here'
                 ),
                 '.'
